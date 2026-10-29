@@ -38,7 +38,7 @@ String message = "";
 Class.forName("com.mysql.cj.jdbc.Driver");
 
 Connection con = DriverManager.getConnection(
-    "jdbc:mysql://localhost:3306/salon", "root", "universe"
+    "jdbc:mysql://localhost:3306/salon", "root", "password"
 );
 
 if (request.getMethod().equalsIgnoreCase("POST")) {
