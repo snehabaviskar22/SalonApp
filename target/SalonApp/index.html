@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Salon Appointment Entry</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        form {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 6px;
+            margin: 8px 0 15px;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Salon Appointment Entry</h2>
+
+<form action="result.jsp" method="post">
+
+    Customer
+    <input type="text" name="customer" required>
+
+    Service
+    <select name="service">
+        <option>Haircut</option>
+        <option>Facial</option>
+        <option>Spa</option>
+        <option>Manicure</option>
+    </select>
+
+    Date
+    <input type="date" name="date" required>
+
+    Time Slot
+    <select name="time">
+        <option>10 AM</option>
+        <option>12 PM</option>
+        <option>3 PM</option>
+        <option>5 PM</option>
+    </select>
+
+    <input type="submit" value="Save">
+
+</form>
+
+</body>
+</html>
